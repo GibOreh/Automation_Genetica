@@ -22,7 +22,7 @@ public class MainSelenium {
     }
 
     @Test
-    public static void teststep() throws InterruptedException {
+    public static void teststep() {
         HomePage.click_flight_from();
         HomePage.click_suggestion_flight_from_value();
         HomePage.click_suggestion_flight_to_value();
@@ -32,7 +32,6 @@ public class MainSelenium {
         HomePage.click_return_date_picker_value();
         HomePage.click_counter();
         HomePage.add_accompanied_children();
-        Thread.sleep(2000);
         HomePage.click_searchBtn();
 
     }
