@@ -22,17 +22,17 @@ public class MainSelenium {
     }
 
     @Test
-    public static void teststep() {
-        HomePage.click_flight_from();
-        HomePage.click_suggestion_flight_from_value();
-        HomePage.click_suggestion_flight_to_value();
-        HomePage.click_departure_date_picker();
-        HomePage.click_departure_date_picker_value();
-        HomePage.click_return_date_picker();
-        HomePage.click_return_date_picker_value();
-        HomePage.click_counter();
-        HomePage.add_accompanied_children();
-        HomePage.click_searchBtn();
+    public void teststep() {
+        HomePage homePage = new HomePage();
+        homePage.click_flight_from();
+        homePage.click_suggestion_flight_from_value();
+        homePage.click_departure_date_picker();
+        homePage.click_departure_date_picker_value();
+        homePage.click_return_date_picker();
+        homePage.click_return_date_picker_value();
+        homePage.click_counter();
+        homePage.add_accompanied_children();
+        homePage.click_searchBtn();
 
     }
     @AfterTest
